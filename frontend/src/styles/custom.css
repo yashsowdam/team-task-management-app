@@ -1,0 +1,340 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --border: #e5e7eb;
+  --text-soft: #6b7280;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.9)),
+    #f8fafd;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  min-height: 46px;
+  border: 1px solid var(--border);
+  box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #93c5fd;
+}
+
+.btn {
+  border-radius: 12px;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.app-main-bg {
+  background: #f8fafd;
+  min-height: 100vh;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  color: #374151;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: #eff6ff;
+  color: var(--primary-color);
+}
+
+.sidebar-link.active {
+  background: #dbeafe;
+  color: var(--primary-dark);
+}
+
+.workspace-card {
+  border-radius: 18px;
+}
+
+.stats-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid #eef2f7;
+}
+
+.task-status-select {
+  max-width: 180px;
+}
+
+.notification-unread {
+  background-color: #eff6ff;
+}
+
+.card {
+  border-radius: 18px !important;
+}
+
+.navbar-brand {
+  letter-spacing: 0.3px;
+}
+
+.auth-container {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.app-navbar {
+  backdrop-filter: blur(8px);
+}
+
+.brand-link {
+  color: inherit;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
+}
+
+.brand-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.1;
+}
+
+.sidebar-shell {
+  background: #ffffff;
+}
+
+.sidebar-brand {
+  padding: 0.25rem 0.5rem 0.75rem;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.sidebar-brand-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.sidebar-brand-subtitle {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.page-header-card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.95));
+  border: 1px solid #e5edf8;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.stats-card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid #eef2f7;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  background: white;
+}
+
+.stats-card-primary {
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.stats-card-accent {
+  background: linear-gradient(180deg, #ffffff, #f5faff);
+}
+
+.stats-card-muted {
+  background: linear-gradient(180deg, #ffffff, #fafafa);
+}
+
+.stats-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.stats-helper {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.empty-state-card {
+  background: white;
+  border: 1px dashed #dbe4f0;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.empty-state-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem;
+  border-radius: 16px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.dashboard-panel {
+  background: white;
+  border: 1px solid #eef2f7;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.member-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #eef2f7;
+  border-radius: 14px;
+  background: #fbfdff;
+}
+
+.project-card {
+  height: 100%;
+  background: white;
+  border: 1px solid #eef2f7;
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.project-card-top {
+  margin-bottom: 1rem;
+}
+
+.project-chip {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.task-card-ui {
+  background: white;
+  border: 1px solid #eef2f7;
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.task-actions-panel {
+  min-width: 190px;
+}
+
+.notification-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.notification-card {
+  background: white;
+  border: 1px solid #eef2f7;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.notification-card-unread {
+  border-color: #bfdbfe;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.notification-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: inline-block;
+}
+
+.notification-type {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: capitalize;
+}
+
+.workspace-info-banner {
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border-color: #dbeafe;
+}
+
+.badge.text-capitalize {
+  text-transform: capitalize;
+}
