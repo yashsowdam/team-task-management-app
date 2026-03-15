@@ -1,0 +1,4 @@
+[build]
+  base = "frontend"
+  command = "react-scripts build"
+  publish = "build"
